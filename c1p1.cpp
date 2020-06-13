@@ -3,6 +3,8 @@
 
 using namespace std;
 
+
+
 bool isUnqie(string s){
     //If the string is longer than 256, there must be a repeated character
     if(s.size()>256){
@@ -12,7 +14,7 @@ bool isUnqie(string s){
     //Create a boolean array
     // bool char_set[256];
     // memset(char_set,0,sizeof(char_set));
-    
+
     //If a repeated character is seem , return false.
     bool char_set[256] = {false};
     for(int i=0;i<s.size();i++){
